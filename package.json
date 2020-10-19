@@ -1,0 +1,22 @@
+{
+  "name": "vue-toggle-switch",
+  "version": "1.0.0",
+  "description": "A smart, easy-to-use on/off switch component for Vue.js with multiple themes.",
+  "main": "src/ToggleSwitch.vue",
+  "keywords": [
+    "vue",
+    "component",
+    "toggle",
+    "switch",
+    "button"
+  ],
+  "author": "Haichen Song",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devwiz1028/vue-toggle-switch/issues"
+  },
+  "homepage": "https://github.com/devwiz1028/vue-toggle-switch#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
+}
