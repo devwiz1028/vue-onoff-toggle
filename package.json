@@ -1,13 +1,14 @@
 {
-  "name": "vue-js-toggle-switch",
+  "name": "vue-onoff-toggle",
   "version": "1.0.0",
-  "description": "A smart, lightweight and easy-to-use on/off switch component for Vue.js with multiple themes.",
-  "main": "src/toggle-switch.vue",
+  "description": "A smart, lightweight and easy-to-use on/off toggle component for Vue.js with multiple themes.",
+  "main": "src/onoff-toggle.vue",
   "keywords": [
     "vue",
     "component",
     "toggle",
     "switch",
+    "onoff",
     "button"
   ],
   "author": "Haichen Song",

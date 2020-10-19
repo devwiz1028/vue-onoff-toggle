@@ -51,7 +51,7 @@ function px(num) {
 }
 
 export default {
-  name: 'ToggleSwitch',
+  name: 'OnoffToggle',
   props: {
     value: { type: Boolean, default: false },
     theme: { type: String, default: 'default' },

@@ -1,23 +1,23 @@
-# Vue Toggle Switch
+# Vue OnOff Toggle
 
-A simple, lightweight switch component made with Vue.js. Provides multiple themes with default configurations. You can also customize size, color and borders.
+A simple, lightweight on/off toggle component made with Vue.js. Provides multiple themes with default configurations. You can also customize size, color and borders.
 
 ## Installation
 ```bash
-npm install vue-toggle-switch --save
+npm install vue-onoff-toggle --save
 ```
 or with `yarn`,
 ```bash
-yarn add vue-toggle-switch
+yarn add vue-onoff-toggle
 ```
 
 ## How to use
 ```javascript
-import ToggleSwitch from 'vue-toggle-switch'  
+import OnoffToggle from 'vue-onoff-toggle'
 
 new Vue({
   components: {
-    ToggleSwitch
+    OnoffToggle
   },
   data() {
     return {
@@ -28,7 +28,7 @@ new Vue({
 ```
 
 ```html
-<toggle-switch v-model="checked" />
+<onoff-toggle v-model="checked" />
 ```
 
 ## Props
@@ -46,19 +46,19 @@ new Vue({
     </tr>
     <tr>
       <td>name</td>
-      <td>Name to attach to checkbox input. Useful when the switch is used inside a form.</td>
+      <td>Name to attach to checkbox input. Useful when the toggle is used inside a form.</td>
     </tr>
     <tr>
       <td>disabled</td>
-      <td>Switch is disabled</td>
+      <td>Toggle is disabled</td>
     </tr>
     <tr>
       <td>onColor</td>
-      <td>Background color of checked switch</td>
+      <td>Background color of checked toggle</td>
     </tr>
     <tr>
       <td>offColor</td>
-      <td>Background color of unchecked switch</td>
+      <td>Background color of unchecked toggle</td>
     </tr>
     <tr>
       <td>thumbColor</td>
@@ -70,11 +70,11 @@ new Vue({
     </tr>
     <tr>
       <td>width</td>
-      <td>Width of the switch</td>
+      <td>Width of the toggle</td>
     </tr>
     <tr>
       <td>height</td>
-      <td>Height of the switch</td>
+      <td>Height of the toggle</td>
     </tr>
     <tr>
       <td>margin</td>
