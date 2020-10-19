@@ -2,7 +2,7 @@
   "name": "vue-toggle-switch",
   "version": "1.0.0",
   "description": "A smart, easy-to-use on/off switch component for Vue.js with multiple themes.",
-  "main": "src/ToggleSwitch.vue",
+  "main": "src/toggle-switch.vue",
   "keywords": [
     "vue",
     "component",
