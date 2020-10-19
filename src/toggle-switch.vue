@@ -19,7 +19,7 @@
 
 <script>
 const THEMES = {
-  'custom': {
+  'default': {
     size: {
       width: 75,
       height: 40
@@ -54,7 +54,7 @@ export default {
   name: 'ToggleSwitch',
   props: {
     value: { type: Boolean, default: false },
-    theme: { type: String, default: 'custom' },
+    theme: { type: String, default: 'default' },
     name: { type: String },
     disabled: { type: Boolean, default: false },
     onColor: { type: String },
@@ -67,7 +67,7 @@ export default {
   },
   computed: {
     themeInfo() {
-      return THEMES[this.theme] || THEMES.custom
+      return THEMES[this.theme] || THEMES.default
     },
     labelClass() {
       const classNames = [
@@ -170,7 +170,7 @@ export default {
   position: absolute;
   transition: all 0.3s;
 }
-.v-toggle-custom .v-toggle_thumb {
+.v-toggle-default .v-toggle_thumb {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
 }
 </style>
