@@ -2,6 +2,10 @@
 
 A simple, lightweight on/off toggle component made with Vue.js. Provides multiple themes with default configurations. You can also customize size, color and borders.
 
+<p align="center">
+  <img src="https://i.imgur.com/8ytDSmL.png">
+</p>
+
 ## Installation
 ```bash
 npm install vue-onoff-toggle --save
@@ -10,6 +14,7 @@ or with `yarn`,
 ```bash
 yarn add vue-onoff-toggle
 ```
+
 
 ## How to use
 ```javascript
@@ -30,6 +35,7 @@ new Vue({
 ```html
 <onoff-toggle v-model="checked" />
 ```
+
 
 ## Props
 <table>
@@ -82,6 +88,7 @@ new Vue({
     </tr>
   </tbody>
 </table>
+
 
 ## Browser Compatibility
 
