@@ -3,7 +3,7 @@
 A simple, lightweight on/off toggle component made with Vue.js. Provides multiple themes with default configurations. You can also customize size, color and borders.
 
 <p align="center">
-  <img src="https://i.imgur.com/8ytDSmL.png">
+  <img src="https://i.imgur.com/Iram1NB.png">
 </p>
 
 ## Installation
@@ -34,6 +34,27 @@ new Vue({
 
 ```html
 <onoff-toggle v-model="checked" />
+
+<onoff-toggle v-model="checked" theme="ios" />
+
+<onoff-toggle v-model="checked" theme="material" />
+
+<onoff-toggle
+  v-model="checked"
+  onColor="#008F13"
+/>
+
+<onoff-toggle
+  v-model="checked"
+  theme="ios"
+  onColor="#008F13"
+/>
+
+<onoff-toggle
+  v-model="checked"
+  theme="material"
+  thumbColor="#008F13"
+/>
 ```
 
 
@@ -48,7 +69,7 @@ new Vue({
   <tbody>
     <tr>
       <td>theme</td>
-      <td>Theme to use. "default" and "ios" are available.</td>
+      <td>Theme to use. "default", "ios" and "material" are available.</td>
     </tr>
     <tr>
       <td>name</td>
@@ -68,7 +89,7 @@ new Vue({
     </tr>
     <tr>
       <td>thumbColor</td>
-      <td>Background color of the thumb</td>
+      <td>Background color of the thumb. For "material" theme, if you don't specify onColor, it will be thumbColor with opacity 0.5 by default</td>
     </tr>
     <tr>
       <td>borderColor</td>
