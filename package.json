@@ -1,6 +1,6 @@
 {
   "name": "vue-onoff-toggle",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A smart, lightweight and easy-to-use on/off toggle component for Vue.js with multiple themes.",
   "main": "src/onoff-toggle.vue",
   "keywords": [
@@ -14,9 +14,9 @@
   "author": "Haichen Song",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/devwiz1028/vue-toggle-switch/issues"
+    "url": "https://github.com/devwiz1028/vue-onoff-toggle/issues"
   },
-  "homepage": "https://github.com/devwiz1028/vue-toggle-switch#readme",
+  "homepage": "https://github.com/devwiz1028/vue-onoff-toggle#readme",
   "dependencies": {
     "vue": "^2.6.11"
   }
