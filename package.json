@@ -1,6 +1,6 @@
 {
   "name": "vue-onoff-toggle",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A smart, lightweight and easy-to-use on/off toggle component for Vue.js with multiple themes.",
   "main": "src/onoff-toggle.vue",
   "keywords": [

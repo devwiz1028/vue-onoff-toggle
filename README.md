@@ -3,7 +3,7 @@
 A simple, lightweight on/off toggle component made with Vue.js. Provides multiple themes with default configurations. You can also customize size, color and borders.
 
 <p align="center">
-  <img src="https://i.imgur.com/Iram1NB.png">
+  <img src="https://i.imgur.com/pVI4GIB.png">
 </p>
 
 ## Installation
@@ -42,6 +42,7 @@ new Vue({
 <onoff-toggle
   v-model="checked"
   onColor="#008F13"
+  :shadow="false"
 />
 
 <onoff-toggle
@@ -106,6 +107,10 @@ new Vue({
     <tr>
       <td>margin</td>
       <td>Space around the thumb</td>
+    </tr>
+    <tr>
+      <td>shadow</td>
+      <td>Only works on default theme. When set to true, a glow effect will be added around the toggle.</td>
     </tr>
   </tbody>
 </table>

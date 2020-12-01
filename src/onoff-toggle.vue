@@ -77,7 +77,8 @@ export default {
     borderColor: { type: String },
     width: { type: [Number, String] },
     height: { type: [Number, String] },
-    margin: { type: [Number, String] }
+    margin: { type: [Number, String] },
+    shadow: { type: Boolean, default: true }
   },
   computed: {
     themeInfo() {
@@ -112,7 +113,7 @@ export default {
 
       if (this.theme === THEME_IOS) {
         Object.assign(style, {
-          backgroundColor: offColor,
+          backgroundColor: this.value ? onColor : offColor,
           boxShadow: `inset 0 0 0 ${this.value ? height / 2 : 0}px ${onColor}, 0 0 0 ${margin}px ${this.value ? onColor : borderColor}`
         })
       } else if (this.theme === THEME_MATERIAL) {
@@ -124,6 +125,8 @@ export default {
         } else if (this.value && !this.onColor && this.thumbColor) {
           style.backgroundColor = semiOpaqueColor(this.thumbColor, 0.5)
         }
+      } else if (this.theme === THEME_DEFAULT && this.shadow) {
+        style.boxShadow = `0px 4px 10px 0px ${semiOpaqueColor(this.value ? onColor : offColor, 0.4)}`
       }
 
       return style
