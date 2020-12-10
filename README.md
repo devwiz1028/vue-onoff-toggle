@@ -16,22 +16,40 @@ yarn add vue-onoff-toggle
 ```
 
 
-## How to use
+## Import in Vue.js
+In your `main.js` file:
+
 ```javascript
+import Vue from 'vue'
 import OnoffToggle from 'vue-onoff-toggle'
 
-new Vue({
-  components: {
-    OnoffToggle
-  },
-  data() {
-    return {
-      checked: false
-    }
-  }
-})
+Vue.use(OnoffToggle)
 ```
 
+## Import in Nuxt.js
+Create a new plugin in `plugins/vue-onoff-toggle.js`:
+
+```javascript
+import Vue from 'vue'
+import OnoffToggle from 'vue-onoff-toggle'
+
+Vue.use(OnoffToggle)
+```
+
+Add this new plugin to `nuxt.config.js`
+
+```javascript
+module.exports = {
+  // ...
+  plugins: [
+    // ...
+    '~plugins/vue-onoff-toggle'
+  ]
+}
+```
+
+## How to use
+After import, use `onoff-toggle` tag inside your vue template:
 ```html
 <onoff-toggle v-model="checked" />
 
