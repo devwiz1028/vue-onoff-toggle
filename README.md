@@ -49,7 +49,7 @@ module.exports = {
 ```
 
 ## How to use
-After import, use `onoff-toggle` tag inside your vue template:
+After importing the library, use `onoff-toggle` tag inside your vue template:
 ```html
 <onoff-toggle v-model="checked" />
 
