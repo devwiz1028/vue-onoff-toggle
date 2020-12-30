@@ -6,6 +6,8 @@ A simple, lightweight on/off toggle component made with Vue.js. Provides multipl
   <img src="https://i.imgur.com/pVI4GIB.png">
 </p>
 
+[Live Demo](https://codepen.io/devwiz1028/pen/XWjZjZm)
+
 ## Installation
 ```bash
 npm install vue-onoff-toggle --save
